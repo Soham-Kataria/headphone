@@ -29,8 +29,6 @@ const Page = () => {
                 id="home"
                 className="relative min-h-screen w-full bg-zinc-950 text-center text-white overflow-hidden"
             >
-                {/* Image: absolutely positioned, centered with pt-20 offset — 
-                    matches the splash overlay's positioning exactly */}
                 <div className="absolute inset-0 flex items-center justify-center pt-20 px-6 pointer-events-none">
                     <div className="relative w-full h-[70vh] md:h-[80vh]">
                         <Image
@@ -43,8 +41,6 @@ const Page = () => {
                         />
                     </div>
                 </div>
-
-                {/* Hero content: positioned at the bottom of the section */}
                 <div className="relative z-10 flex min-h-screen flex-col items-center justify-end pb-16 pt-20">
                     <div className="hero-content max-w-4xl mx-auto">
                         <h1 className="text-6xl font-bold tracking-tighter md:text-9xl uppercase">
@@ -55,7 +51,6 @@ const Page = () => {
                         </p>
                     </div>
                 </div>
-
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
             </section>
             <section
