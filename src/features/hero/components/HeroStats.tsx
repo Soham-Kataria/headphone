@@ -41,10 +41,10 @@ export const HeroStats = ({ className }: HeroStatsProps) => {
   return (
     <div ref={containerRef} className={cn("absolute inset-0 z-40 pointer-events-none", className)}>
       <div className="relative w-full h-full max-w-[1400px] mx-auto px-12">
-        <div ref={ancRef} className="absolute top-[15%] left-[5%] pointer-events-auto -rotate-3 origin-center">
+        <div ref={ancRef} className="absolute top-[10%] left-[5%] pointer-events-auto -rotate-3 origin-center">
           <ANCCard className="w-[320px]" />
         </div>
-        <div ref={batteryRef} className="absolute top-[15%] right-[5%] pointer-events-auto rotate-3 origin-center">
+        <div ref={batteryRef} className="absolute top-[10%] right-[5%] pointer-events-auto rotate-3 origin-center">
           <BatteryCard className="w-[320px]" />
         </div>
       </div>

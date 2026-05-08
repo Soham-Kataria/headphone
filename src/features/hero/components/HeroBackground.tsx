@@ -14,7 +14,7 @@ export const HeroBackground = ({ text, className }: HeroBackgroundProps) => {
         className
       )}
     >
-      <h1 className="text-[10vw] font-black uppercase tracking-tighter text-white/10 leading-none whitespace-nowrap">
+      <h1 className="text-[10vw] font-black uppercase tracking-tighter text-white/17 leading-none whitespace-nowrap">
         {text}
       </h1>
     </div>

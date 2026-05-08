@@ -52,7 +52,7 @@ export default function Hero() {
             <HeroStats 
                 className="js-hero-stats opacity-0" 
             />
-            <div className="js-hero-features absolute bottom-10 left-0 w-full px-12 z-50 opacity-0">
+            <div className="js-hero-features absolute bottom-6 left-0 w-full px-12 z-50 opacity-0">
                 <HeroFeatures />
             </div>
         </section>

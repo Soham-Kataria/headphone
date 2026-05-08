@@ -8,12 +8,12 @@ export interface HeroFeaturesProps {
 }
 
 export const HeroFeatures = ({ className }: HeroFeaturesProps) => {
-    const renderFeatureCard = (feature: typeof heroFeaturesData[0], isSmall = false) => (
+    const renderFeatureCard = (feature: typeof heroFeaturesData[0], className?: string) => (
         <div
             key={feature.id}
             className={cn(
-                "relative overflow-hidden flex flex-col justify-between gap-4 rounded-2xl bg-zinc-900/80 border border-zinc-700/50 p-5 backdrop-blur-md transition-all duration-300 hover:bg-zinc-900 hover:border-zinc-500/50 group",
-                isSmall ? "w-[260px]" : "w-[280px]"
+                "relative overflow-hidden flex flex-col justify-between gap-4 rounded-2xl bg-zinc-900/80 border border-zinc-700/50 p-5 backdrop-blur-md transition-all duration-300 hover:bg-zinc-900 hover:border-zinc-500/50 group w-full",
+                className
             )}
         >
             {feature.imageUrl && (
@@ -59,12 +59,20 @@ export const HeroFeatures = ({ className }: HeroFeaturesProps) => {
         <div className={cn('flex flex-row items-end justify-between w-full', className)}>
             {/* Left side: 2 cards */}
             <div className="flex flex-row gap-4">
-                {heroFeaturesData.slice(0, 2).map((feature) => renderFeatureCard(feature))}
+                {heroFeaturesData.slice(0, 2).map((feature) => (
+                    <div key={feature.id} className="w-[280px]">
+                        {renderFeatureCard(feature)}
+                    </div>
+                ))}
             </div>
 
             {/* Right side: 1 card */}
             <div className="flex flex-row gap-4">
-                {heroFeaturesData.slice(2).map((feature) => renderFeatureCard(feature, true))}
+                {heroFeaturesData.slice(2).map((feature) => (
+                    <div key={feature.id} className="w-[300px]">
+                        {renderFeatureCard(feature)}
+                    </div>
+                ))}
             </div>
         </div>
     );

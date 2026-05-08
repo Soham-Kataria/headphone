@@ -8,7 +8,7 @@ export interface ANCCardProps {
 export const ANCCard = ({ className }: ANCCardProps) => {
     return (
         <StatCard
-            graphic={<Waveform accentColor="#ef4444" />}
+            graphic={<Waveform accentColor="#ef4444" className="w-24 h-10" />}
             value="99% ANC"
             label="AMBIENT NOISE CANCELLATION"
             variant="dark"

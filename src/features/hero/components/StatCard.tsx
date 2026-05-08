@@ -28,14 +28,16 @@ export const StatCard = ({ graphic, value, label, variant, className }: StatCard
                 className
             )}
         >
-            <div className="absolute top-4 right-4 flex h-12 w-12 items-center justify-center">
-                {graphic}
+            <div className="flex items-center justify-between gap-3">
+                <span className="text-4xl font-bold tracking-tight">{value}</span>
+                <div className="flex h-12 items-center justify-center">
+                    {graphic}
+                </div>
             </div>
             
-            <div className="mt-16 flex flex-col gap-1">
-                <span className="text-4xl font-light tracking-tight">{value}</span>
+            <div className="mt-4 flex flex-col gap-1">
                 <span className={cn(
-                    "text-sm font-medium uppercase tracking-wider",
+                    "text-[10px] font-medium uppercase tracking-widest",
                     labelStyles[variant]
                 )}>
                     {label}
