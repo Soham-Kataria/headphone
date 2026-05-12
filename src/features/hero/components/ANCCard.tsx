@@ -11,7 +11,7 @@ export const ANCCard = ({ className }: ANCCardProps) => {
             graphic={<Waveform accentColor="#3b82f6" className="w-28 h-12" />}
             value="99% ANC"
             label="AMBIENT NOISE CANCELLATION"
-            variant="dark"
+            variant="accent"
             className={className}
         />
     );
