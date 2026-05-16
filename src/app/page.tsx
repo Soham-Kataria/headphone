@@ -3,7 +3,6 @@
 import React from 'react';
 import Hero from '@/features/hero';
 import ProductSection from '@/features/product';
-
 import FeaturesSection from '@/features/features';
 
 const Page = () => {
